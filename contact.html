@@ -10,8 +10,10 @@ map:
   zoom: 13
 ---
 
+
+
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+	<!--<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 		<h3>Send us a message</h3>
 		<label for="name">Full Name</label>
 		<input type="text" name="name" id="name" placeholder="Enter your name..." autofocus>
@@ -26,10 +28,60 @@ map:
 		<input type="text" name="_gotcha" style="display: none;">
 
 		<input type="submit" value="Send Message">
-	</form>
+	</form>-->
+	
+  <form id="my-form" class="contact-box contact-form" action="https://formspree.io/f/xdobebyd" method="POST">
+  <h3>Send us a message</h3>
+  <label>Name:</label>
+  <input type="text" name="name" class="form-control" /><br>
+  <label>Email Address:</label>
+  <input type="email" name="email" class="form-control" /><br>
+  <label>Message:</label>
+  <!--<input type="text" name="message" class="form-control" /><br><br>-->
+	 <textarea name="message" rows="3" class="form-control"></textarea><br>
+  <div class="g-recaptcha" data-sitekey="4b1b8566-c827-4870-93c7-aa0a3bcbb1ba" data-callback="recaptcha_callback"></div>
+  <br>
+  <button disabled="disabled" id="my-form-button" class="btn btn-primary">Submit</button>
+  <p id="my-form-status"></p>
+</form>
+
 
 	<div class="contact-details">
 		<div class="map" id="map">
 			<img src="https://source.unsplash.com/ZJaK9jQXeDA/458x499">
 		</div>
 </div>
+
+
+<script type="text/javascript">
+       function recaptcha_callback() {
+       $('#my-form-button').removeAttr('disabled');
+        };                                  
+</script>
+
+<script src="https://js.hcaptcha.com/1/api.js?hl=en" async defer></script>
+
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for reaching out!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+                                 
+	
+    form.addEventListener("submit", handleSubmit)
+</script>
