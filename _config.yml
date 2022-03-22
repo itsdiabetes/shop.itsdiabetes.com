@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Diabetic Needs
+title: "Diabetic Supplies: Patches and More"
 url: "https://shop.itsdiabetes.com"
 baseurl: ""
 google_analytics_key:
@@ -10,7 +10,7 @@ snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5O
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /favicon.ico
-description: Fur t-shirt store
+description: Diabetic Supplies
 author:
   name: ItsDiabetes
   email: support@shop.itsdiabetes.com

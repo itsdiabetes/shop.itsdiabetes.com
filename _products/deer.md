@@ -1,19 +1,17 @@
 ---
-name: Sacha the Deer
+name: Sacha's Deer (x10)
 description_markdown: >-
-  Sacha's elegant antlers have never been seen on such a beautiful t-shirt. Wear
-  this majestic beast and feel all your problems float away.
+  Sacha's elegant deer inspired overpatch inspires an adorable camouflage appearance while providing maximum protection. Wear this majestic deer overpatch and feel secure your rumbustious day of hunting.
 
 
 
-  Slim Fit, 5oz 100% Cotton T-Shirt.
+  Durable Design, Secure & Safe for Children Skin.
 garment_type:
-price: '9.00'
+price: '1.20'
 sku: deer
 stock: 10
 model: Dexcom G6
 styles:
-  - name: Black
-    color: '#000000'
-    image: /images/products/deer/black.jpg
+  - name: primary
+    image: /images/products/abbys-patch/patch.png
 ---
