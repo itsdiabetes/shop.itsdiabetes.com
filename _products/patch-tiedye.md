@@ -13,5 +13,5 @@ stock: 10
 model: Dexcom G6
 styles:
   - name: primary
-    image: /images/products/abbys-patch/patch.png
+    image: /images/products/patches/tie-dye.png
 ---
