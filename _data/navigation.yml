@@ -1,3 +1,7 @@
+- name: "{{ site.title }}"
+  link: "{{ site.baseurl }}"
+  new_window: false
+  highlight: false
 - name: Products
   link: /
   new_window: false
