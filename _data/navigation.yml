@@ -1,5 +1,5 @@
-- name: "{{ site.title }}"
-  link: "{{ site.baseurl }}"
+- name: Diabetic Supplies: Patches and More
+  link: /
   new_window: false
   highlight: false
 - name: Products
