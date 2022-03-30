@@ -1,5 +1,5 @@
 ---
-name: hypno (x10)
+name: Hypno (x10)
 description_markdown: >-
   The Hypno patch will mesmerize you with its spiraling design. Try not to stare too long. 
 
