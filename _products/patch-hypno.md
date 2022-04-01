@@ -14,4 +14,5 @@ model: Dexcom G6
 styles:
   - name: primary
     image: /images/products/patches/hypno.png
+    image-alt: "Spiraling hypnotic loop"
 ---
