@@ -14,4 +14,5 @@ model: Dexcom G6
 styles:
   - name: primary
     image: /images/products/patches/tiedye.png
+    image-alt: "Bright and colorful tie-dye patch"
 ---
